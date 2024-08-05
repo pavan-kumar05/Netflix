@@ -1,0 +1,364 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+img{
+    max-width: 100%;
+}
+body{
+    font-family: 'Helvetica Neue', Helvetica, Arial,sans-serif;
+    background-color: #000;
+    color: #fff;
+    }
+header{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 26px 56px;
+    position: absolute;
+    z-index: 5;
+    width: 100%;
+}
+header a.logo{
+    display: block;
+}
+header .logo svg{
+    fill: #e50914;
+    height: 37px;
+}
+header div+div {
+    text-align: right;
+}
+header a.button{
+    display: inline-block;
+    background-color: #e50914;
+    color: #fff;
+    text-decoration: none;
+    padding: 7px 17px;
+    border-radius: 3px;
+}
+header select{
+    background: transparent;
+    color: #fff;
+    padding: 6px 7px 6px 20px;
+    border-radius: 3px;
+}
+header div.select{
+    display: inline-block;
+    margin-right: 30px;
+}
+header div.select svg{
+    height: 20px;
+    fill: #fff;
+    position: absolute;
+    margin-top: 5px;
+    margin-left: 4px; 
+}
+
+div.splash{
+    position: relative;
+}
+div.splash div.gradient{
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%);
+    position: absolute;
+    inset: 0;
+}
+div.splash div.background img{
+    max-width: 100%;
+    opacity: 0.9;
+}
+div.splash div.content{
+    margin-top: 95px;
+    margin-bottom: 95px;
+    max-width: 700px;
+    position: absolute;
+    inset: 0;
+    left: 50%;
+    margin-left: -327.5px;
+    display: grid;
+    align-items: center;
+    text-align: center;
+}
+div.splash h1, div.splash h2, div.splash h3{
+    font-weight: normal;
+}
+div.splash h1{
+        font-size: 3.525rem;
+        font-weight: bold;
+}
+div.splash h2{
+        font-size: 1.625rem;
+        margin-top: 13px;
+        margin-bottom: 29px;
+}
+div.splash h3{
+        font-size: 1.2rem;
+}
+div.cta form{
+    position: relative;
+    display: grid;
+    margin-top: 20px;
+    grid-template-columns: 1fr max-content;
+}
+div.cta form .mailid{
+    margin-right: 10px;
+}
+div.cta input{
+    padding: 15px 10px;
+    font-size: 1.2rem;
+    width: 100%;
+    background: rgba(22, 22, 22, 0.7);
+    border-color: rgba(128, 128, 128, 0.7);
+    border-radius: 3px;
+    color: white;
+}
+div.cta input ~ span{
+    position: absolute;
+    left: 12px;
+    top: 19px;
+    z-index: 3;
+    color: #aaa;
+    transition: all 0.15s ease;
+    pointer-events: none;
+}
+div.cta input:focus{
+    padding-top: 19px;
+    padding-bottom: 11px;
+}
+div.cta input:focus ~ span{
+    top: 4px;
+    font-size: .8rem;
+}
+div.cta button{
+    font-size: 1.625rem;
+    padding: 12px 26px;
+    background-color: #e50914;
+    color: #fff;
+    border: 0;
+    border-radius: 3px;
+}
+section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 46px;
+    padding: 70px 35px;
+    align-items: center;
+    border-top: 8px solid #222;
+}
+
+section.last{
+    border-bottom: 8px solid #222;
+}
+section div.texts{
+    margin-left: 19.5%;
+}
+section div.texts h1{
+    font-size: 3.115rem;
+    margin-bottom: 15px;
+}
+section div.texts p{
+    font-size: 1.425rem;
+}
+.media{
+    position: relative;
+    left: 50px;
+}
+
+.media.s1 img{
+    width: 500px;
+}
+.media.s1 video{
+    width: 363px;
+     position: absolute;
+     top: 77.5px;
+     left: 66.5px;
+}
+section:nth-child(even) div.texts{
+        order: 2;
+    } 
+
+section div.download{
+    border: 2px solid #666;
+    border-radius: 15px;
+    padding: 10px;
+    height: 95px;
+    display: grid;
+    text-align: center;
+    align-items: center;
+    position: absolute;
+    bottom: 8%;
+    width: 340px;
+    left: 43%;
+    margin-left: -140px;
+    background-color: #000;
+    gap: 15px;
+    grid-template-columns: max-content 1fr max-content;
+}
+section div.download p{
+    font-size: 1rem;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+section div.download span{
+    font-size: 0.875rem;
+    color: #0071eb;
+}
+section div.download img{
+    height: 75px;
+    width: auto;
+}
+
+.media.s3 img{
+    width: 550px;
+    position: relative;
+    z-index: 5;
+}
+.media.s3 video{
+    width: 345px;
+     position: absolute;
+     top: 49px;
+     left: 15.5%;
+}
+
+div.faq{
+    padding: 70px 30px;
+}
+div.faq h1{
+    font-size: 3.125rem;
+    text-align: center;
+    margin-bottom: 40px;
+}
+div.questions{
+    max-width: 1200px;
+    margin: 0 auto;
+    font-size: 1.625rem;
+}
+div.question{
+    position: relative;
+    background-color: #303030;
+    margin-bottom: 10px;
+}
+div.question svg{
+    width: 30px;
+    height: 30px;
+    right: 30px;
+    top: 20px;
+    position: absolute;
+    transform: rotate(45deg);
+    transition: all 0.2s ease;
+}
+div.question .header{
+    display: block;
+    padding: 20px 30px;
+    border-bottom: 1px solid #000;
+    cursor: pointer;
+}
+div.question div.answer{
+    font-size: 1.525rem;
+    padding: 0 30px;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.2s ease;
+}
+div.question input[type="checkbox"]{
+    display: none;
+}
+div.question input[type="checkbox"]:checked ~ div.answer{
+    padding: 30px 30px;
+    max-height: 600px;
+}
+div.question input[type="checkbox"]:checked ~ .header svg{
+    transform: rotate(180deg);
+}
+div.faq h3{
+    font-weight: normal;
+    text-align: center;
+    margin: 40px 0 20px;
+}
+div.faq form{
+    max-width: 635px;
+    margin: 0 auto;;
+}
+
+footer {
+    border-top: 8px solid #222;
+    background-color: #000;
+    color: #fff;
+    padding: 20px 15%;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    flex: 1;
+    padding: 0 20px;
+}
+
+footer p {
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+footer p span{
+    text-decoration: underline;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li a {
+    color: rgba(255,255,255,0.7);
+    display: block;
+    margin-bottom: 8px;
+    font-size: 15px;
+    margin-top: 20px;
+}
+
+.social-icons img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #444;
+}
+
+footer select {
+    background: transparent;
+    color: #fff;
+    padding: 6px 7px 6px 20px;
+    border-radius: 3px;
+
+}
+
+footer div.select {
+    margin-top: 20px;
+    display: inline-block;
+    margin-right: px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+footer div.select svg {
+    display: block;
+    height: 20px;
+    color: #fff;
+    position: absolute;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+footer .ending{
+    margin-top:20px ;
+    color: rgba(255,255,255,0.7);
+}
